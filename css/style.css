@@ -1,0 +1,137 @@
+/* No CSS *//*# sourceMappingURL=style.css.map */
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans:wght@800&display=swap');
+
+/* 
+NOTES
+- Open Sans : 'Open Sans', sans-serif;
+- Inconsolata : 'Inconsolata', monospace;
+- Arial : Arial, sans-serif;
+
+- Dark : #343A40;
+- Light : #F8F9FA;
+- Decor Dark : #495057;
+- Decor Light : #CED4DA;
+- Decor Yellow : #FFB400;
+- Decor Red : #EA5455;
+*/
+
+/* all */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F8F9FA;
+}
+section {
+    height: 100vh;
+}
+
+/* home */
+span {
+    position: absolute;
+    pointer-events: none;
+    background: #EA5455;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
+.home_title {
+    padding-left: 80px;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+}
+.home_title p {
+    color: #343A40;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+}
+.home_title a {
+    color: #343A40;
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* about */
+.about_container {
+    padding-top: 35vh;
+}
+.about_title h2 {
+    color: #343A40;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    padding-left: 80px;
+}
+.about_text p {
+    color: #343A40;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: left;
+}
+
+/* education */
+.education_container {
+    padding-top: 30vh;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.education_title h2 {
+    color: #343A40;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+}
+.collapsible_education {
+    background-color: #343A40;
+    color: #F8F9FA;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    align-items: center;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 15px;
+}
+.active, .collapsible_education:hover {
+    background-color: red;
+}
+.solideo_content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #343A40;
+    color: #F8F9FA;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%
+}
+.ipeka_content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #343A40;
+    color: #F8F9FA;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%
+}
