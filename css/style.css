@@ -115,7 +115,8 @@ span {
     border-radius: 15px;
 }
 .active, .collapsible_education:hover {
-    background-color: red;
+    background-color: #CED4DA;
+    color: #343A40;
 }
 .solideo_content {
     padding: 0 18px;
