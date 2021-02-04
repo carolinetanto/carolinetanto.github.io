@@ -1,21 +1,20 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
-
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 /* 
-NOTES
-- Open Sans : 'Open Sans', sans-serif;
-- Inconsolata : 'Inconsolata', monospace;
-- Arial : Arial, sans-serif;
-- Quicksand : 'Quicksand', sans-serif;
+Open Sans : 'Open Sans', sans-serif;
+Inconsolata : 'Inconsolata', monospace;
+Arial : Arial, sans-serif;
+Quicksand : 'Quicksand', sans-serif;
+*/
 
-- Dark : #343A40;
-- Light : #F8F9FA;
-- Decor Dark : #495057;
-- Decor Light : #CED4DA;
-- Decor Yellow : #FFB400;
-- Decor Red : #EA5455;
+/*
+Dark : #343A40;
+Light : #F8F9FA;
+Decor Dark : #495057;
+Decor Light : #CED4DA;
+Decor Yellow : #FFB400;
+Decor Red : #EA5455;
 */
 
 /* all */
@@ -23,14 +22,28 @@ NOTES
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
     background-color: #F8F9FA;
 }
 section {
     height: 100vh;
 }
-
+.section_title h2 {
+    color: #343A40;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    padding-left: 80px;
+}
+.section_text {
+    color: #343A40;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: justify;
+}
+.container {
+    padding-top: 35vh;
+}
 /* home */
 span {
     position: absolute;
@@ -72,23 +85,52 @@ span {
     text-decoration: none;
 }
 
-/* about */
-.about_container {
-    padding-top: 35vh;
-}
-.about_title h2 {
-    color: #343A40;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 45px;
-    padding-left: 80px;
-}
-.about_text p {
-    color: #343A40;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
-    text-align: left;
-}
-
 /* education */
+.accordion {
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #343A40;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    
+}
+.accordion .icon i{
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+}
+.icon {
+    color: #F8F9FA;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.accordion h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #343A40;
+    font-family: 'Quicksand', sans-serif;
+}
+.active .icon {
+    /* berubah icon jd ^ */
+}
+.active {
+    background-color: #EA5455;
+    color: #F8F9FA;
+}
+.active h5 {
+    color: #F8F9FA;
+}
+.content {
+    padding: 0 15px;
+    border-left: 1px solid #343A40;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-in;
+}
