@@ -87,6 +87,7 @@ span {
 
 /* education */
 .accordion {
+    padding-top: 40%;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -114,7 +115,7 @@ span {
   }  
 .accordion-body {
     padding: 0 1rem;
-    background-color: #f3f3f3;
+    background-color: red;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
