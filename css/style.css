@@ -1,11 +1,13 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 /* 
 Open Sans : 'Open Sans', sans-serif;
 Inconsolata : 'Inconsolata', monospace;
 Arial : Arial, sans-serif;
 Quicksand : 'Quicksand', sans-serif;
+Poppins: 'Poppins', sans-serif;
 */
 
 /*
@@ -22,10 +24,10 @@ Decor Red : #EA5455;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F8F9FA;
 }
 section {
     height: 100vh;
+    background-color: #F8F9FA;
 }
 .section_title h2 {
     color: #343A40;
@@ -87,13 +89,14 @@ span {
 
 /* education */
 .accordion {
-    padding-top: 40%;
+    padding-left: 80px;
+    padding-right: 80px;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 4px;
-    font-family: 'Open Sans', sans-serif;
 }
+  
 .accordion-header {
     display: flex;
     justify-content: space-between;
@@ -102,25 +105,30 @@ span {
     background: #343A40;
     border: none;
     outline: none;
-    border-bottom: 1px solid #CED4DA;
+    border-bottom: 2px solid #CED4DA;
     color: #F8F9FA;
     cursor: pointer;
-  }  
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;;
+}
+  
 .accordion-header.active {
-    background-color: #495057;
-  }
+    background-color: #24282c;
+}
 .accordion-header.active i {
     transform: rotate(180deg);
     transition: all 0.3s ease-in-out;
-  }  
+}  
 .accordion-body {
     padding: 0 1rem;
-    background-color: red;
+    background-color: #F3F3F3;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-  }  
+    font-family: Arial, Helvetica, sans-serif;
+    color: #343A40;
+}
 .accordion-body.active {
     max-height: 10rem;
     padding: 1rem;
-  }
+}
