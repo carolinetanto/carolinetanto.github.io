@@ -96,7 +96,6 @@ span {
     overflow: hidden;
     border-radius: 4px;
 }
-  
 .accordion-header {
     display: flex;
     justify-content: space-between;
@@ -111,7 +110,6 @@ span {
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;;
 }
-  
 .accordion-header.active {
     background-color: #24282c;
 }
@@ -132,3 +130,5 @@ span {
     max-height: 10rem;
     padding: 1rem;
 }
+
+/* experience */
