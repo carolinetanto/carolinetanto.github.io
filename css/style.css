@@ -90,6 +90,13 @@ span {
     text-decoration: none;
 }
 
+/* about */
+img {
+    border-radius: 8px;
+    width: 200px;
+    height: 80px;
+}
+
 /* experience */
 .accordion {
     padding-left: 80px;
