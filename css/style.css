@@ -95,13 +95,11 @@ span {
     display: flex;
     align-items: center;
     flex-direction: row;
-}
-.image_text p {
-    padding-left: 15px;
+    position: relative;
 }
 img {
     border-radius: 8px;
-    width: 100%;
+    width: 400px;
     height: auto;
     padding-left: 80px;
 }
@@ -160,4 +158,12 @@ img {
     clear: both;
     font-family: 'Inconsolata', monospace;
     color: #343A40;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+    color: #343A40;
+}
+.social {
+    padding-top: 10px;
 }
